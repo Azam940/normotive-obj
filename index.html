@@ -11,54 +11,6 @@
 
 
     <script>
-        let obj1 = {
-            a: 15,
-            b: 10,
-            yuzasi: function () {
-                return this.a * this.b;
-            }
-        };
-        console.log(obj1.yuzasi());
-
-        let obj2 = {
-            soliq: 20,
-            kamunal: 12,
-            prava: 980,
-            havo: 3,
-            qanchaKoTarildi: function (foiz) {
-                for (let key in this) {
-                    if (typeof this[key] === "number") {
-                        this[key] = this[key] + (this[key] * foiz / 100);
-                    }
-                }
-            }
-        };
-        obj2.qanchaKoTarildi(15);
-        console.log(obj2);
-
-        let obj3 = {
-            Salim: 50,
-            Vali: 87,
-            Ali: 12,
-            deleteUser: function (name) {
-                delete this[name];
-            }
-        };
-        obj3.deleteUser("Vali");
-        console.log(obj3);
-
-        let obj4 = {
-            olma: 7,
-            mandarin: 4,
-            banan: 6,
-            apelsin: 1
-        };
-        for (let key in obj4) {
-            if (obj4[key] % 2 !== 0) {
-                delete obj4[key];
-            }
-        }
-        console.log(obj4);
 
     </script>
 </body>
